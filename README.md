@@ -116,4 +116,4 @@ This project is created for educational purposes as part of a coding exercise.
 
 ---
 
-*Built with modern web technologies for an optimal user experience.*gi
+f
