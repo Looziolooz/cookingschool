@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+        <h1>Recipe Collection</h1>
+        <p>Discover delicious recipes from around the world</p>
+    </header>
+
+    <main>
+        <section id="controls">
+            <div class="filter-section">
+                <h2>Filter Recipes</h2>
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="cuisine-filter">Cuisine Type:</label>
+                        <select id="cuisine-filter">
+                            <option value="all">All Cuisines</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="ingredient-filter">Max Ingredients:</label>
+                        <select id="ingredient-filter">
+                            <option value="all">Any</option>
+                            <option value="5">5 or less</option>
+                            <option value="10">10 or less</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="search-group">
+                    <label for="search">Search Recipes:</label>
+                    <input type="text" id="search" placeholder="Enter keywords...">
+                </div>
+            </div>
+            
+            <div class="sort-section">
+                <h2>Sort Recipes</h2>
+                <div class="sort-controls">
+                    <div class="sort-group">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by">
+                            <option value="none">No Sorting</option>
+                            <option value="name">Name (A-Z)</option>
+                            <option value="name-desc">Name (Z-A)</option>
+                            <option value="time">Cooking Time (Low to High)</option>
+                            <option value="time-desc">Cooking Time (High to Low)</option>
+                            <option value="ingredients">Ingredients (Few to Many)</option>
+                            <option value="ingredients-desc">Ingredients (Many to Few)</option>
+                        </select>
+                    </div>
+                    
+                    <button id="random-recipe" class="random-btn">Pick a Random Recipe</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="featured-recipe" class="featured hidden">
+            <h2>Featured Recipe</h2>
+            <div class="featured-content">
+                <!-- Featured recipe will be displayed here -->
+            </div>
+        </section>
+        
+        <section id="recipes">
+            <h2>All Recipes</h2>
+            <div id="recipe-list" class="recipe-grid">
+                <!-- Recipes will be displayed here -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Recipe Collection &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
